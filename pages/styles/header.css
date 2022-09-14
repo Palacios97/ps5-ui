@@ -1,0 +1,63 @@
+/* Header */
+.screen{
+    background: url(https://www.psu.com/wp/wp-content/uploads/2020/10/astros-playroom-ps5-wallpapers-06.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    filter: brightness(110%) saturate(110%);
+  }
+  
+  header{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  header .media-nav .active{
+    font-weight: 700;  
+    color: white; 
+  } 
+  
+  header .media-nav{
+    font-size: 2rem;
+    color: #8f97aa;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-weight: 100;
+  }
+  header .settings {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white
+  }
+  
+  .user{
+    width: 50px;
+  }
+  
+  .icon picture .badge{
+    width:10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: limegreen;
+    position: absolute;
+    top:78px;
+    right:195px;
+    
+  }
+  
+  header .settings .fa{
+    font-size: 2rem;
+    color: white ;
+  }
+  
+  .container{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,128 @@
+.game-nav{
+    display:flex;
+    
+  }
+  
+.game-nav .game{
+    background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%);
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 20%;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 0px solid #576170;
+    color: white;
+  }
+  
+  .game-nav .game:hover{
+    border: 2px solid #576170;
+  }
+  
+  
+  .game-nav .game.active{
+    overflow: visible;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #576170;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .game-nav .game.active::after{
+    content: "Explore";
+    position: absolute;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+    bottom: 10px;
+    right:-100px;
+  }
+  
+  .game-nav .game.active .fa{
+    font-size: 4rem;
+  }
+  
+  .game-nav .game .img-0{
+    width: 60px;
+    height: 60px;
+    background: url(https://gmedia.playstation.com/is/image/SIEPDC/ps-store-blue-bag-icon-01-22sep20?$native--t$);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+  }
+  
+  .game-nav .game .img-1{
+    width: 105px;
+    height: 105px;
+    background: url(https://wallpaperaccess.com/full/4726661.png);
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.5);
+    background-repeat: no-repeat;
+  }
+  
+  .game-nav .game .img-2{
+    width: 100px;
+    height: 100px;
+    background: url(https://assets-prd.ignimgs.com/2020/09/12/demons-souls-button-sep2020-1599871782337.jpg);
+    background-size: contain;
+    background-position: center;
+    
+  }
+  
+  .game-nav .game .img-3{
+    width: 100px;
+    height: 100px;
+    background: url(https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/9h423wCC1FFb8tknYFAU4NC9.png);
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.5);
+    background-repeat: no-repeat;
+    
+  }
+  
+  .game-nav .game .img-4{
+    width: 100px;
+    height: 100px;
+    background: url(http://www.devilmaycry5.com/assets/img/common/share.png);
+    background-size: contain;
+    background-position: center;
+    transform: scale(2);
+    background-repeat: no-repeat;
+    
+  }
+  
+  .game-nav .game .img-5{
+    width: 100px;
+    height: 105px;
+    background: url(https://img.gg.deals/7d/ce/82953cd1c599e1d8020edf6cf914c6e166d8_1920xt1080_Q100.png);
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.9);
+    background-repeat: no-repeat;
+    
+  }
+  
+  .game-nav .game .img-6{
+    width: 60px;
+    height: 60px;
+    background: url(https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-blue-bag-icon-01-22sep20?$native--t$);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+  }
+
+  .info{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 15rem;
+  }
+  
+.sub-title, p {
+  color: #576170;
+}

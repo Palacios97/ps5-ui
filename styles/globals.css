@@ -1,11 +1,16 @@
+@import'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import '../pages/styles/game-nav.css';
+@import '../pages/styles/header.css';
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
+
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -15,12 +20,81 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+.Loading_screen{
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+  background: black;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  overflow: hidden;
+  justify-items: center;
+}
+
+.message{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+p{
+  color: white;
+  padding: 1rem;
+  margin: 0 5rem 0 5rem;
+  
+}
+
+.dualsense_container{
+  margin-top: -1.5rem;
+}
+
+.dualsense_container .ps-button{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position: relative;
+  top:225px;
+  
+} 
+
+.dualsense_container .ps-button .bi{
+  color: white;
+  cursor: pointer;
+}
+
+.dualsense{
+  align-items: center;
+  opacity: 1;
+  animation: circle 3s linear infinite, reveal 5s;
+  animation-delay: 2s;
+}
+
+
+@keyframes circle {
+  0% {
+    clip-path: circle(5%);
   }
-  body {
-    color: white;
-    background: black;
+  45% {
+    clip-path: circle(100%);
+  }
+  100% {
+    clip-path: circle(100%);
   }
 }
+
+
+
+.psn-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ps5_intro{
+  display:flex;
+  justify-content: center;
+}
+
