@@ -1,14 +1,11 @@
-import Head from "next/head";
 
-export default function GameNav({title, description}) {
+
+export default function Game_nav(props) {
   return (
-    <>
-        <Head>
-          
-          <title>{title}</title>
-          <meta name="description" content={description}/>
-        </Head>
-    </>
-  );
+    <div className={props.box}>
+      <div className={props.class}></div>
+    </div>
+
+  )
 }
 

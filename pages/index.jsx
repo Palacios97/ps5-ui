@@ -1,24 +1,21 @@
-import GameNav from "../components/game_nav"
+import Layout from "../components/layout"
 import Image from "next/image"
 import Link from "next/link"
+import Particle from "../components/Particles"
+import Logo from "../components/logo"
 
 
 export default function Home() {
   return (
   <div className="Loading_screen">
-    <GameNav
+    <Layout
       title="Loading intro"
       description="System starts with welcome message">
-    </GameNav> 
-
+    </Layout> 
+    <Particle />
+    
   <div className="instructions">
-    <Image 
-      src="/../public/images/ps5-logo.jpg"
-      className="ps_logo"
-      alt="ps logo"
-      width={250}
-      height={120}/>
-
+    <Logo/>
   </div>
 
   <div className="message">

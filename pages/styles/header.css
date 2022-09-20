@@ -1,10 +1,10 @@
 /* Header */
 .screen{
     background: url(https://www.psu.com/wp/wp-content/uploads/2020/10/astros-playroom-ps5-wallpapers-06.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 800px;
     overflow: hidden;
     filter: brightness(110%) saturate(110%);
   }

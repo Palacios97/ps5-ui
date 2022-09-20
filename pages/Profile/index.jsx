@@ -1,18 +1,18 @@
-import GameNav from "../../components/game_nav";
+import Layout from "../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
 // import { exchangeNpssoForAccessCode, exchangeAccessCodeForAuthTokens, getUserTitles} from "psn-api";
 
-
-
 export default function Profile(){
   return (
-    <div className="profile">
-      <GameNav 
+    <div>     
+      <Layout 
       title="Profile" 
       description="user profile"
       link = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
-      </GameNav>
+      </Layout>
+    <div className="profile__screen">
+
       <section className="main">
         <header className="userpage">
             <Image
@@ -164,8 +164,9 @@ export default function Profile(){
 
         </section>
 
-      </main>
+      </main> 
       
+      </div>
     </div>
   );
 }

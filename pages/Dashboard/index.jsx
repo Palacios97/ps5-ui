@@ -1,41 +1,42 @@
-import GameNav from "../../components/game_nav";
+import Layout from "../../components/layout";
 import Link from "next/link";
+import Game_nav from "../../components/game_nav";
 
 export default function Index(){
-    return(
+  return(
        
-        <div className="screen">
-            <GameNav 
-              title="Dashboard|next.js" 
-              description="Playstation user interface">
-            </GameNav>
+    <div className="screen">
+      <Layout 
+        title="Dashboard" 
+        description="Playstation user interface">
+      </Layout>
 
-     <header>
-         <section className='media-nav'>
-           <a href="#" className="active">Games</a>
-           <a href="#">Media</a> 
+      <header>
+        <section className='media-nav'>
+          <a href="#" className="active">Games</a>
+          <a href="#">Media</a> 
         </section>
 
-         <section className="settings">
-           
-             <span className="icon">
+        <section className="settings">          
+          <span className="icon">
             <i className="fa fa-search"></i>
-            </span>
+          </span>
           
 
-           <a href='#' className='options'>
-             <span className="icon">
-               <i className="fa fa-cog"></i>
-             </span>
-           </a>
+          <a href='#' className='options'>
+            <span className="icon">
+              <i className="fa fa-cog"></i>
+            </span>
+          </a>
 
-           <span className="icon">
+          <span className="icon">
             <Link href='/Profile'>
               <picture>           
-                <img
+              <img
                 src="https://iconarchive.com/download/i65800/hopstarter/bioman/Bioman-Avatar-3-Blue.ico"
                 alt="profile-picture"
                 className='user' />
+
                 <div className='badge'></div>              
               </picture>
             </Link>
@@ -43,58 +44,49 @@ export default function Index(){
 
           <span className="time"> 9:11 AM </span>
         </section>
-    </header>
+      </header>
 
       <div className='container'>
-       <section className='game-nav'>
-         <div className='game active'>
-             <i className='fa fa-location-arrow'></i>
-           </div> 
 
- <div className='game'>
-             <a href='https://www.playstation.com/nl-be/about-playstation-store/'><div className='img-0'></div></a>
-           </div>
+      <section className='game-nav'>
+        <div className='game active'>
+          <i className='fa fa-location-arrow'></i>
+        </div> 
 
-           <div className='game'>
-             <div className='img-1'></div>
-           </div>
+        <div className='gamestore'>
+          <a href='https://www.playstation.com/nl-be/about-playstation-store/'><div className='img-0'></div></a>
+        </div>
 
-           <div className='game'>
-             <div className='img-2'></div>
-           </div>
+        <Game_nav
+        box='game'
+        class='img-1'/>
+        <Game_nav
+        box='game'
+        class='img-2'/>
+        <Game_nav
+        box='game'
+        class='img-3'/>
+        <Game_nav
+        box='game'
+        class='img-4'/>
+        <Game_nav
+        box='game'
+        class='img-5'/>
+        <Game_nav
+        box='game'
+        class='img-6'/>
 
-           <div className='game'>
-             <div className='img-3'></div>
-           </div>
+      </section>
 
-           <div className='game'>
-             <div className='img-4'></div>
-           </div>
+      <section className='info'>
 
-           <div className='game'>
-             <div className='img-5'></div>
-           </div>
+        <span className='sub-title'>Official news from Playstation | 4 hours ago</span> 
 
-           <div className='game'>
-             <div className='img-6'></div>
-           </div>
-         </section>
+        <h1>Ready for a PS5 Adventure? </h1>
 
-        <section className='info'>
-
-           <span className='sub-title'>
-             Official news from Playstation | 4 hours ago
-           </span>
-
-           <h1>Ready for a PS5 Adventure? </h1>
-             <p>
-               ASTRO`S PLAYROOM is pre-loaded and waiting for you! Explore the new capabilities of PS5 and feel the world...
-             </p>
-
-             <div className='videos'></div>
-                
-        </section>
-      </div>
-</div>
-);
+        <p className="sub-txt">ASTRO's PLAYROOM is pre-loaded and waiting for you! Explore the new capabilities of PS5 and feel the world...</p>            
+      </section>
+    </div>
+  </div>
+  );
 }

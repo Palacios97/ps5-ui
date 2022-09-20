@@ -1,14 +1,14 @@
 @import'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import '../pages/styles/game-nav.css';
 @import '../pages/styles/header.css';
-
+@import '../pages/styles/users.css';
+@import '../pages/styles/profile.css';
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
 
 }
 a {
@@ -26,7 +26,6 @@ a {
   grid-template-rows: 1fr 1fr 5fr;
   grid-template-columns: 1fr;
   row-gap: 4rem;
-  background: black;
   height: 700px;
   width: 100%;
   align-items: center;
@@ -87,10 +86,8 @@ p{
 
 
 
-.psn-logo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.ps-logo{
+  background-color: #000;
 }
 
 .ps5_intro{
