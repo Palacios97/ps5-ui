@@ -41,7 +41,7 @@
     right:-100px;
   }
   
-  .game-nav .game.active .fa{
+  .game-nav .game.active .bi{
     font-size: 4rem;
   }
 
@@ -66,7 +66,9 @@
     background-repeat: no-repeat;
     margin: 20px auto;
   }
-  
+  .game-nav .gamestore:hover{
+    border: 2px solid #576170;
+  }
   .game-nav .game .img-1{
     width: 105px;
     height: 105px;
@@ -80,7 +82,7 @@
   .game-nav .game .img-2{
     width: 100px;
     height: 100px;
-    background: url(https://assets-prd.ignimgs.com/2020/09/12/demons-souls-button-sep2020-1599871782337.jpg);
+    background: url(../../public/images/demons-souls.jpg);
     background-size: contain;
     background-position: center;
     

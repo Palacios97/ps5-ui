@@ -2,7 +2,10 @@ import Layout from "../../components/layout";
 import Link from "next/link";
 import Game_nav from "../../components/game_nav";
 
+
 export default function Index(){
+  
+  
   return(
        
     <div className="screen">
@@ -19,13 +22,13 @@ export default function Index(){
 
         <section className="settings">          
           <span className="icon">
-            <i className="fa fa-search"></i>
+            <i className="bi bi-search"></i>
           </span>
           
 
           <a href='#' className='options'>
             <span className="icon">
-              <i className="fa fa-cog"></i>
+              <i className="bi bi-gear-fill"></i>
             </span>
           </a>
 
@@ -42,7 +45,8 @@ export default function Index(){
             </Link>
           </span>
 
-          <span className="time"> 9:11 AM </span>
+         <span></span>
+
         </section>
       </header>
 
@@ -50,7 +54,7 @@ export default function Index(){
 
       <section className='game-nav'>
         <div className='game active'>
-          <i className='fa fa-location-arrow'></i>
+          <i className='bi bi-cursor-fill'></i>
         </div> 
 
         <div className='gamestore'>

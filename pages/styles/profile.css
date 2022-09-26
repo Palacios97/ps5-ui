@@ -1,4 +1,191 @@
 .profile__screen{
-background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%);
 color: white;
+width: 100%;
+height: auto;
+padding: 2rem;
+background: url(https://generacionxbox.com/wp-content/uploads/2019/09/war-darksiders-generacion-xbox.jpg);
+background-size: 95rem;
+background-repeat: no-repeat;
+filter: saturate(110%);
+}
+
+.profile__id{
+ display: flex;
+ gap: 10px;
+ margin-bottom: 30px;
+
+} 
+.user__picture{
+  border-radius: 50%;
+  background-image: url(../../public/images/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+}
+.badge__profile{
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background:lime;
+  position: relative;
+  top:129px;
+  left: -40px; 
+  border:white solid 1.9px; 
+}
+.nickname{
+  display: flex;
+}
+
+.profile_nickname{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+h3{
+  font-size: x-large;
+}
+
+.icon-language{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language{
+  margin-left: 8px;
+}
+.profile-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 3rem;
+}
+
+
+.left{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  list-style: none;
+  margin-top:3rem;
+
+}
+
+.nav-right{
+  display:flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+} 
+.right{
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.link{
+padding: 10px 6px;
+}
+
+.display:hover{
+  text-decoration: solid 2px underline;
+ 
+}
+ nav .bi{
+ font-size: x-large;
+}
+
+nav .bi:hover{
+  cursor: pointer;
+}
+
+.player-info{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas: 
+    "trophies accolades games friends"; 
+  justify-items: center;
+}
+.trophies { grid-area: trophies; }
+.accolades { grid-area: accolades; }
+.games { grid-area: games; }
+.friends { grid-area: friends; }
+
+
+.num-trophies{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.trophie-type{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.trophies{
+  background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%) ;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.accolades{
+  background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%) ;
+  width: 300px;
+  height: 350px;
+}
+
+.friends{
+  background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%) ;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.games{
+  background: linear-gradient(60deg, rgba(16,25,37,1) 0%, rgba(0,0,1) 50%, rgba(16,25,37,1)100%) ;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary{
+  font-weight: 500;
+  font-size: large;
+}
+
+.platinum, .gold, .silver, .bronce{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tropies-earned{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accolades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.acco-img{
+  transform: rotate(-9deg);
 }

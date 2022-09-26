@@ -1,144 +1,143 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-// import { exchangeNpssoForAccessCode, exchangeAccessCodeForAuthTokens, getUserTitles} from "psn-api";
 
 export default function Profile(){
   return (
-    <div>     
+    <div className="profile__screen"> 
       <Layout 
-      title="Profile" 
-      description="user profile"
-      link = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+        title="Profile" 
+        description="user profile"
+        link = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
       </Layout>
-    <div className="profile__screen">
 
-      <section className="main">
-        <header className="userpage">
-            <Image
-            src="/../public/images/me.jpg"
-            alt="user picture profile"
-            className="user__picture"
-            width={115}
-            height={90}
-          />
-        
-          <div className="Badge__profile"></div>
-          <div>
-            <h3>Miguel Palacios</h3>
-            <Image 
-            src="/../public/images/avatar.ico"
-            alt="avatar"
-            className="avatar__profile"
-            width={50}
-            height={50} />
-            <span>Kratosfame07</span> | <span> Last online 2 days ago </span>
-            <span>English (United States) </span>
-          </div>
-         
-        </header>
-      </section>
+      <section className="profile__id">
+        <div className="user__picture"></div>
+
+        <div className="badge__profile"></div>
         
 
+        <div className="profile_nickname">
+          <h3>Miguel Palacios</h3>
+          <span>Kratosfame07 | Last online 2 days ago </span>
+       </div>
+      </section>    
+    <div className="icon-language">
+      <i className="bi bi-translate"></i> <span className="language">English (United States) </span>   
+    </div>  
       <section className="profile-nav">
         <nav className="nav-left">
-          <Link href="/">
-            Overview
-          </Link>
-          <Link href="/">
-            Games
-          </Link>
-          <Link href="/">
-            Friends
-          </Link>
-          <Link href="/">
-            Shared
-          </Link>
-        </nav>
+          <ul className="left">
+            <li className="display">
+            <Link href={'/Profile'}> 
+            <a className="link"> Overview </a>
+            </Link>
+            </li>
 
-        <div className="icons">
-          <i className="bi bi-person-fill"></i>
-          <i className="bi bi-pencil fill"></i>
-          <i className="bi bi-sliders "></i>
-        </div>
+            <li className="display">
+            <Link href={'Profile/games'}> 
+            <a className="link"> Games </a> 
+            </Link>
+            </li>
+
+            <li className="display">
+            <Link href={'Profile/friends'}>
+              <a className="link"> Friends </a>
+            </Link>
+            </li>
+            
+            <li className="display">
+            <Link href={'Profile/shared'}>
+              <a className="link"> Shared </a>
+            </Link>
+            </li>
+
+          </ul>
+        </nav>  
+
+        <nav className="nav-right">        
+          <ul className="right"> 
+            <li className="display">
+              <i className="bi bi-person-check-fill"></i>
+            </li>
+
+            <li className="display">
+              <i className="bi bi-pencil-fill"></i>
+            </li>
+    
+            <li className="display">
+              <i className="bi bi-sliders "></i>
+            </li> 
+          </ul>
+        </nav>
+         
       </section>
 
-      <main>
         <section className="player-info">
-          <div className="trofeos">
-            <div className="numero-trofeos">
+          <div className="trophies">
+            {
+
+            }
+            <div className="num-trophies">
               <Image
-              src="/../public/images/trofeos-ps5.png"
+              src="/../public/images/trofeos-ps5.ico"
               alt="trophies icon"
               width={50}
               height={50}/>
-              <span className="trophies__number">270</span>
+              <span className="trophies__number">312</span>
             </div>
 
-            <div className="clasificacion-trofeos">
-              <Image 
-                src="/../public/images/trofeos1.png"
+            <div className="trophie-type">
+
+              <div className="platinum"><Image 
+                src="/../public/images/platinum.ico"
                 alt="platinum"
                 width={30}
-                height={30}
-              /> 
-              
-              <br />
-
+                height={30}/> 
               <span>24</span>
-
-              <br />
-
-              <Image 
-                src="/../public/images/trofeo-oro.jpg"
+              </div>
+              <div className="gold">
+                <Image 
+                src="/../public/images/gold.ico"
                 alt="platinum"
                 width={30}
-                height={30}
-              /> 
-                
-              <br />
+                height={30}/> 
+                <span>136</span>
+              </div>
 
-              <span>24</span>
-
-            <br />
-
+              <div className="silver"> 
               <Image 
-                src="/../public/images/trofeo-plata.jpg"
+                src="/../public/images/silver.ico"
                 alt="platinum"
                 width={30}
-                height={30}
-              /> 
-            <br />
+                height={30} /> 
+              <span>561</span>
+              </div>
 
-              <span>24</span>
-
-            <br />
-
-              <Image 
-                src="/../public/images/trofeo-bronce.png"
+              <div className="bronce">  
+                <Image 
+                src="/../public/images/bronce.ico"
                 alt="platinum"
                 width={30}
-                height={30}
-              /> 
-            <br />
-
-              <span>24</span>
-
-            <br />
-
-              <span>Trophies earned:</span>
-            <br />
-
-              <span>2468</span>
-            </div>
+                height={30}/> 
+                <span>2347</span>
+              </div>
           </div>
 
-        <br />
+          <div className="tropies-earned">
+            <span className="summary">Trophies earned:</span>
+            <span className="summary">3068</span>
+          </div> 
+        </div>
 
         <div className="accolades">
-          <span></span>
-         <br />
-
+          
+        <Image
+              src="/../public/images/accolades.png"
+              alt="trophies icon"
+              className="acco-img"
+              width={150}
+              height={90}/>
           <span> No accolades earned yet</span>
         </div>
 
@@ -152,42 +151,24 @@ export default function Profile(){
           <span>174</span>
         </div>
 
-        <br />
-
         <div className="friends">
-          <span className="friend-images"></span>
-          <br />
+        <Image
+            src="/../public/images/friends.png"
+            alt="trophies icon"
+           
+            width={150}
+            height={90}/>
+          
           <span>Friends:</span>
-          <br />
+          
           <span>93</span>
         </div>
 
         </section>
 
-      </main> 
       
-      </div>
+      
     </div>
+   
   );
 }
-
-// // This is my NPSSO token
-// const myNpsso = 'n2yy846WL1WhncZksSk9D7Vh5odhAtwxj6oTnmrstojx5CzqNIqzp8ON013yXhic'
-
-// // this a function to have an access token and authorization 
-// export async function getStaticProps(){
-//   try{ 
-//   const accessCode = await exchangeNpssoForAccessCode(myNpsso);
-//   authorization = await exchangeAccessCodeForAuthTokens(accessCode);
-//   console.log(accessCode);
-//   return {
-//     props: {accessCode, authorization}
-//       }
-//   }catch(error){
-//     console.log(error)
-//   }
-//  }
-
-
-
-
