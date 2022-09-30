@@ -1,10 +1,10 @@
 ### PlayStation 5 UI
 
 This project was based on PS5 UI, where some of the features are:
-+to retrieve data from psn-api
-+gather trophy data
-+game data
-+user data
+*to retrieve data from psn-api
+*gather trophy data
+*game data
+*user data
 
 ---
 
