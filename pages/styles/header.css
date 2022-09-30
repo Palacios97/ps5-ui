@@ -39,6 +39,9 @@
   .user{
     width: 50px;
   }
+  .user:hover{
+    cursor: pointer;
+  }
   
   .icon picture .badge{
     width:10px;
@@ -47,8 +50,12 @@
     background-color: limegreen;
     position: absolute;
     top:78px;
-    right:195px;
+    right:182px;
     
+  }
+  time{
+    font-size: 18px;
+    font-weight: 500;
   }
   
   header .settings .bi{
@@ -61,3 +68,6 @@
     margin: 0 auto;
   }
   
+  .bi:hover{
+    cursor: pointer;
+  }

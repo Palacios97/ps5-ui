@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Link from "next/link";
 import Game_nav from "../../components/game_nav";
+import Time from "../../components/Time";
 
 
 export default function Index(){
@@ -44,8 +45,8 @@ export default function Index(){
               </picture>
             </Link>
           </span>
-
-         <span></span>
+          
+          <Time />
 
         </section>
       </header>

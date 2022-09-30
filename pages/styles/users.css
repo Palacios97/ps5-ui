@@ -15,6 +15,19 @@
     font-size: 2rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.users_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users_header time{
+color:white;
+font-size: 20px;
+letter-spacing: 1px;
+margin-right: 30px;
+
+}
 
 .users-container{
    display: flex;
@@ -26,55 +39,63 @@
 
 }
 .add_user{
-    border-radius:150px ;
-    width: 250px;
-    height: 250px;
-    background: url(https://www.svgrepo.com/show/138461/add-user-symbol.svg);
-    background-color: white;
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:150px ;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background:  rgb(118,8,18) linear-gradient(133deg,rgba(118,8,18,1) 38%, rgba(50, 20, 49, 1) 57%);
+  background-repeat: no-repeat;  
 }
+
 .add_user:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 
 .user_description{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5px;
+  padding-left: 6px;
 }
 
 .player{
     
-    border-radius:150px ;
-    width: 250px;
-    height: 250px;
-    background: url(https://p4.wallpaperbetter.com/wallpaper/559/670/367/death-mask-hero-evil-wallpaper-preview.jpg);
-    background-size: cover;
-    background-position: center;
-    
+  border-radius:150px ;
+  width: 250px;
+  height: 250px;
+  background: url(https://p4.wallpaperbetter.com/wallpaper/559/670/367/death-mask-hero-evil-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;  
 }
 
 .player:hover{
     cursor: pointer;
 }
 .guest_1{
-    border-radius:150px ;
-    width: 250px;
-    height: 250px;
-    background: url(https://static.thenounproject.com/png/3762957-200.png);
-    background-size:10rem;
-    background-position: center;
-    background-color: white;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:150px ;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background:  rgb(118,8,18) linear-gradient(133deg,rgba(118,8,18,1) 38%, rgba(50, 20, 49, 1) 57%);
+  background-repeat: no-repeat;
     
 }
 
 .guest_1:hover{
     cursor: pointer;
+}
+
+.bi{
+  font-size: 4rem;
 }

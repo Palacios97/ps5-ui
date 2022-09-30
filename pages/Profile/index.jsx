@@ -1,19 +1,18 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-
-export default function Profile(){
+export default function Overview(){
   return (
     <div className="profile__screen"> 
       <Layout 
         title="Profile" 
-        description="user profile"
-        link = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+        description="user profile">
       </Layout>
 
       <section className="profile__id">
-        <div className="user__picture"></div>
-
+        <Link href={'/Dashboard'}>
+        <a><div className="user__picture"></div></a>
+        </Link>
         <div className="badge__profile"></div>
         
 
@@ -141,14 +140,14 @@ export default function Profile(){
           <span> No accolades earned yet</span>
         </div>
 
-          <br />
-
         <div className="games">
-          <span>games images</span>
-          <br />
-          <span>Games:</span>
-          <br />
-          <span>174</span>
+        <div className="games_images">
+         
+        </div>
+        <br />
+        <span>Games:</span>
+        <br />
+        <span>174</span>
         </div>
 
         <div className="friends">

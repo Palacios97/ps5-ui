@@ -27,7 +27,7 @@ export default function Home() {
   <div id="dualsense" className="dualsense_container">
      <div className="ps-button">
       
-     <Link href="/Users" >
+     <Link href="/users" >
        <i className="bi bi-playstation"></i> 
       </Link >
       

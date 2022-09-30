@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <div>
     <Image 
-      src="/../public/images/ps5-logo.jpg"
+      src="/../public/images/ps5-logo.png"
       className="ps_logo"
       alt="ps logo"
       width={250}
